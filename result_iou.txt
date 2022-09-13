@@ -1,0 +1,1041 @@
+ssh://zhupengqi@172.16.170.134:22/home/zhupengqi/anaconda3/envs/unet/bin/python3.8 -u /home/zhupengqi/Inside-Outside-Guidance-master/test_refine.py
+Using GPU: 0
+Initializing weights from: /home/zhupengqi/Inside-Outside-Guidance-master/run_0/models/IOG_pascal_refinement_epoch-99.pth
+Number of images: 1449
+Number of objects: 3427
+Testing Network
+/home/zhupengqi/anaconda3/envs/unet/lib/python3.8/site-packages/torch/nn/functional.py:3509: UserWarning: nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.
+  warnings.warn("nn.functional.upsample is deprecated. Use nn.functional.interpolate instead.")
+Lossy conversion from float64 to uint8. Range [-0.023587364703416824, 1.0247604846954346]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023614604026079178, 1.024790644645691]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000033']iou:0.9411912096334399
+Lossy conversion from float64 to uint8. Range [-0.023617444559931755, 1.0247942209243774]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000033']iou:0.7816407001346413
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000033']iou:0.7836699680262029
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0778229236602783]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0778746604919434]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000042']iou:0.9041661499405461
+Lossy conversion from float64 to uint8. Range [0.0, 1.0779250860214233]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0691617727279663]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0691717863082886]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000042']iou:0.9175524233146555
+Lossy conversion from float64 to uint8. Range [0.0, 1.0691900253295898]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003895862028002739, 0.9999997615814209]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0038996278308331966, 0.9999998807907104]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000061']iou:0.8178509027373325
+Lossy conversion from float64 to uint8. Range [-0.002279933076351881, 0.9999998807907104]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000061']iou:0.8427035195689787
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0005031571490690112, 1.0006086826324463]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0004990079905837774, 1.0006141662597656]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000123']iou:0.960426282412098
+Lossy conversion from float64 to uint8. Range [-0.00043705623829737306, 1.0006208419799805]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01175719778984785, 1.0510506629943848]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011724824085831642, 1.0509729385375977]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000129']iou:0.820462004544307
+------iou_avg: 0.7769663160312203
+Lossy conversion from float64 to uint8. Range [-0.011745264753699303, 1.052572250366211]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.007888076826930046, 0.9999961853027344]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0043333242647349834, 0.9999962449073792]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000129']iou:0.856449394568647
+Lossy conversion from float64 to uint8. Range [-0.004333832301199436, 0.9999943971633911]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01016286201775074, 1.0023034811019897]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.010137719102203846, 1.002301812171936]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000129']iou:0.832819119543194
+Lossy conversion from float64 to uint8. Range [-0.010141661390662193, 1.0022960901260376]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0030288230627775192, 0.9999998211860657]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0029120491817593575, 0.9999998211860657]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000129']iou:0.8849397970119145
+Lossy conversion from float64 to uint8. Range [-0.002873501507565379, 0.9999999403953552]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.005086802411824465, 1.022064447402954]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00508782546967268, 1.0220811367034912]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000129']iou:0.8114705799826033
+Lossy conversion from float64 to uint8. Range [-0.005089317448437214, 1.0221046209335327]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00022386189084500074, 1.0301947593688965]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00023484148550778627, 1.030181646347046]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000129']iou:0.8282634305356077
+Lossy conversion from float64 to uint8. Range [-0.00023042631801217794, 1.0300697088241577]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02167913317680359, 1.016350507736206]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02176535502076149, 1.0166468620300293]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000175']iou:0.934172806167875
+Lossy conversion from float64 to uint8. Range [-0.02175992727279663, 1.0167193412780762]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006917895749211311, 1.0124986171722412]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0069368751719594, 1.0128995180130005]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000187']iou:0.982202772648061
+Lossy conversion from float64 to uint8. Range [-0.006958621554076672, 1.013002634048462]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.029967188835144]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0299781560897827]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000323']iou:0.9355742843393552
+Lossy conversion from float64 to uint8. Range [0.0, 1.0299962759017944]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009267166256904602, 1.078970193862915]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009312867186963558, 1.0789364576339722]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000323']iou:0.9657647918633332
+------iou_avg: 0.803165697666059
+Lossy conversion from float64 to uint8. Range [-0.009391918778419495, 1.0788582563400269]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0035287721548229456, 1.0052434206008911]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0034499240573495626, 1.0051268339157104]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000332']iou:0.7120635077653577
+Lossy conversion from float64 to uint8. Range [-0.003435330931097269, 1.0051171779632568]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01546158455312252, 1.0074528455734253]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.014676784165203571, 1.0074104070663452]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000346']iou:0.9362679211469535
+Lossy conversion from float64 to uint8. Range [-0.014802011661231518, 1.007366418838501]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012487221509218216, 1.0151479244232178]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012492427602410316, 1.0151605606079102]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000346']iou:0.964409460680928
+Lossy conversion from float64 to uint8. Range [-0.012494189664721489, 1.015173316001892]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000346']iou:0.7932943550473431
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000346']iou:0.781727949469885
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01688007265329361, 1.0153573751449585]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.016559328883886337, 1.0157557725906372]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000452']iou:0.9302808394987165
+Lossy conversion from float64 to uint8. Range [-0.016459524631500244, 1.0147926807403564]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0007954226457513869, 1.007913589477539]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.000649545865599066, 1.0084917545318604]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000452']iou:0.9069532180833128
+Lossy conversion from float64 to uint8. Range [-0.0006343036075122654, 1.0085623264312744]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00012104627239750698, 1.0065935850143433]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00011903219274245203, 1.0067737102508545]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000464']iou:0.9183200665320186
+Lossy conversion from float64 to uint8. Range [-0.00011711657862178981, 1.0069594383239746]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0027587609365582466, 1.0031343698501587]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0027473813388496637, 1.003145456314087]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000464']iou:0.8686528753835494
+------iou_avg: 0.7811970193608064
+Lossy conversion from float64 to uint8. Range [-0.002729838015511632, 1.0031596422195435]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011897599324584007, 1.0602517127990723]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011950543150305748, 1.0602623224258423]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000491']iou:0.931139456055519
+Lossy conversion from float64 to uint8. Range [-0.011976543813943863, 1.060272216796875]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0402543544769287]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0402456521987915]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000529']iou:0.8528048244236447
+Lossy conversion from float64 to uint8. Range [0.0, 1.0400477647781372]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000529']iou:0.6961779086273067
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0009774831123650074, 0.9999998807907104]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000559']iou:0.9436619718309859
+Lossy conversion from float64 to uint8. Range [-9.042129386216402e-05, 0.9999999403953552]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0030522290617227554, 1.0025193691253662]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003029230749234557, 1.0022122859954834]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000559']iou:0.9725289224060109
+Lossy conversion from float64 to uint8. Range [-0.0026467335410416126, 1.0019094944000244]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000572']iou:0.31204731335741426
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000572']iou:0.272078501338091
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01966056600213051, 1.0227261781692505]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0196542888879776, 1.022745132446289]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000629']iou:0.8904028859204229
+Lossy conversion from float64 to uint8. Range [-0.019642967730760574, 1.022769570350647]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000629']iou:0.8262295081967214
+------iou_avg: 0.6697071292156117
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012257706373929977, 1.007688045501709]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012289374135434628, 1.0077037811279297]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000636']iou:0.9458995048759533
+Lossy conversion from float64 to uint8. Range [-0.012312553822994232, 1.0077145099639893]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-2.0877592760371044e-05, 0.9999998211860657]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-2.1259560526232235e-05, 0.9999998211860657]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000661']iou:0.838155981266675
+Lossy conversion from float64 to uint8. Range [-2.2200645616976544e-05, 0.9999998807907104]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006051878444850445, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.005658064503222704, 1.0000026226043701]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000661']iou:0.45630685480982736
+Lossy conversion from float64 to uint8. Range [-0.005510891787707806, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000661']iou:0.48702620749404374
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009380531497299671, 1.0110218524932861]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009511388838291168, 1.0110608339309692]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000663']iou:0.9721307981909881
+Lossy conversion from float64 to uint8. Range [-0.009581880643963814, 1.011128306388855]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000663']iou:0.7597306475488347
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000663']iou:0.852627437265017
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0030524730682373]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0030887126922607]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000663']iou:0.7819917507587746
+Lossy conversion from float64 to uint8. Range [0.0, 1.0031508207321167]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000663']iou:0.8812941776579465
+------iou_avg: 0.6975163359868061
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000663']iou:0.6879503035116582
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015463894233107567, 1.019878625869751]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015524801798164845, 1.0201020240783691]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000676']iou:0.9494676538939631
+Lossy conversion from float64 to uint8. Range [-0.015906507149338722, 1.0202468633651733]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00015499762957915664, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0001559622905915603, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.9031888264866116
+Lossy conversion from float64 to uint8. Range [-0.00015545393398497254, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.7310048361096185
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.8910969247666117
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.6853828636493026
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.724804992199688
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.6656070057581573
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.7779125036375982
+------iou_avg: 0.701641591001321
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000727']iou:0.7777313319399582
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0556951761245728]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0556895732879639]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.827706409546836
+Lossy conversion from float64 to uint8. Range [0.0, 1.0556724071502686]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.9168389022849925
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.018414244055747986, 1.0357979536056519]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0184173583984375, 1.0362818241119385]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.8811256005490734
+Lossy conversion from float64 to uint8. Range [-0.0184565931558609, 1.036280870437622]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.8544745005169941
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0006592649733647704, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0006592054851353168, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.6951968219573853
+Lossy conversion from float64 to uint8. Range [-0.0006986462976783514, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.6997008588246647
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00109908077865839, 1.008954405784607]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0010988934664055705, 1.0089435577392578]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.8392559724358892
+Lossy conversion from float64 to uint8. Range [-0.0010962410597130656, 1.0089390277862549]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-8.832497769617476e-06, 1.0294952392578125]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0295475721359253]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000762']iou:0.6752916494484885
+------iou_avg: 0.7167322047504281
+Lossy conversion from float64 to uint8. Range [0.0, 1.0295475721359253]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0034393183887004852, 1.0047190189361572]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0034329290501773357, 1.0047154426574707]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000783']iou:0.8331144830269429
+Lossy conversion from float64 to uint8. Range [-0.003386408556252718, 1.0047242641448975]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.018595196306705475, 1.0223746299743652]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.018482742831110954, 1.0225188732147217]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000783']iou:0.8912004735929637
+Lossy conversion from float64 to uint8. Range [-0.018341783434152603, 1.0227017402648926]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02415059506893158, 1.0121365785598755]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.024156922474503517, 1.0121687650680542]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000799']iou:0.8328035921497402
+Lossy conversion from float64 to uint8. Range [-0.024014325812458992, 1.0121771097183228]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.013404369354248]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0133864879608154]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000799']iou:0.8960863398634873
+Lossy conversion from float64 to uint8. Range [0.0, 1.0132979154586792]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000804']iou:0.9052243503282079
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006561979651451111, 1.0038855075836182]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006399109028279781, 1.0039520263671875]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000804']iou:0.9037866629451305
+Lossy conversion from float64 to uint8. Range [-0.006351166404783726, 1.0039680004119873]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.008873830549418926, 1.013570785522461]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.008750868029892445, 1.0134971141815186]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000804']iou:0.921975407992994
+Lossy conversion from float64 to uint8. Range [-0.008790997788310051, 1.0134906768798828]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015119530260562897, 1.0339393615722656]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015104969032108784, 1.0339347124099731]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000830']iou:0.6643889683753516
+Lossy conversion from float64 to uint8. Range [-0.01510387472808361, 1.0339338779449463]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0005019204691052437, 1.012000322341919]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0005152717931196094, 1.012053370475769]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000830']iou:0.7816184996390207
+------iou_avg: 0.7630198777913838
+Lossy conversion from float64 to uint8. Range [-0.000514100887812674, 1.0121469497680664]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000830']iou:0.7377190974077183
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0036916732788086]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0036969184875488]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000830']iou:0.7200078539171412
+Lossy conversion from float64 to uint8. Range [0.0, 1.0043665170669556]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.001186490058899]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0002349615097046]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000837']iou:0.8043962920952791
+Lossy conversion from float64 to uint8. Range [0.0, 1.0001137256622314]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023062756285071373, 1.054531216621399]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02336512878537178, 1.0545740127563477]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000847']iou:0.9788525678453454
+Lossy conversion from float64 to uint8. Range [-0.023553408682346344, 1.054604172706604]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01593216136097908, 1.0204389095306396]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015898162499070168, 1.0206446647644043]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000847']iou:0.93741775560792
+Lossy conversion from float64 to uint8. Range [-0.015875937417149544, 1.0250325202941895]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000862']iou:0.7208278291501541
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000862']iou:0.759829838954725
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.008912243880331516, 1.0032814741134644]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.008863342925906181, 1.0032830238342285]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000925']iou:0.8885400465624004
+Lossy conversion from float64 to uint8. Range [-0.008876902982592583, 1.0032885074615479]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011107783764600754, 1.0003050565719604]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011099076829850674, 1.0003067255020142]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000925']iou:0.8789658003304617
+------iou_avg: 0.7426557081871145
+Lossy conversion from float64 to uint8. Range [-0.011106515303254128, 1.0003122091293335]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-7.953881868161261e-05, 1.0034376382827759]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-7.778562576277182e-05, 1.0034695863723755]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000999']iou:0.8960189199842333
+Lossy conversion from float64 to uint8. Range [-7.695028762100264e-05, 1.003476858139038]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023724323138594627, 1.024396538734436]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02374916337430477, 1.0243974924087524]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_000999']iou:0.9420094351258017
+Lossy conversion from float64 to uint8. Range [-0.0237582977861166, 1.0244053602218628]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00069471076130867, 1.0683307647705078]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0007740668952465057, 1.0683847665786743]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001154']iou:0.9534075693632311
+Lossy conversion from float64 to uint8. Range [-0.0007820825558155775, 1.0684561729431152]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001154']iou:0.35859777015437394
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0007310888031497598, 1.0033910274505615]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0006871003424748778, 1.0033677816390991]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001175']iou:0.6273950705290217
+Lossy conversion from float64 to uint8. Range [-0.0006722316611558199, 1.0033608675003052]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001175']iou:0.5522574123989218
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001175']iou:0.8545934145897762
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0006981315091252327, 1.005324363708496]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.000698078132700175, 1.0053184032440186]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001239']iou:0.8388165811934164
+Lossy conversion from float64 to uint8. Range [-0.0006829301128163934, 1.0053536891937256]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012775111943483353, 1.014784574508667]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012799962423741817, 1.0149747133255005]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001239']iou:0.863808179825114
+------iou_avg: 0.6886904353163891
+Lossy conversion from float64 to uint8. Range [-0.012801313772797585, 1.0149950981140137]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013047014363110065, 1.0071609020233154]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01302260160446167, 1.0071589946746826]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001239']iou:0.8873068882883801
+Lossy conversion from float64 to uint8. Range [-0.013026615604758263, 1.0071369409561157]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0020500533282756805, 1.006269097328186]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.001873548375442624, 1.006338119506836]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001284']iou:0.971871576999564
+Lossy conversion from float64 to uint8. Range [-0.0018783542327582836, 1.0053472518920898]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023777056485414505, 1.0002288818359375]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023081336170434952, 1.000049352645874]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001284']iou:0.8553864657634933
+Lossy conversion from float64 to uint8. Range [-0.02300996705889702, 1.0000436305999756]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015488879755139351, 1.0010634660720825]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015482772141695023, 1.001050591468811]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001284']iou:0.7532889327413255
+Lossy conversion from float64 to uint8. Range [-0.015755364671349525, 1.0012691020965576]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009047657251358032, 1.014526605606079]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009033642709255219, 1.014789342880249]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001284']iou:0.9302905094564662
+Lossy conversion from float64 to uint8. Range [-0.00901644118130207, 1.0150392055511475]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0075322482734918594, 1.0286283493041992]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.007535438984632492, 1.0285882949829102]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001284']iou:0.9468548319753779
+Lossy conversion from float64 to uint8. Range [-0.007529592141509056, 1.028530478477478]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001284']iou:0.8317917495999688
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03116321936249733, 1.0299876928329468]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03115331381559372, 1.0298181772232056]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001288']iou:0.8572949453804851
+Lossy conversion from float64 to uint8. Range [-0.031148603186011314, 1.029834508895874]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-1.3036816199019086e-05, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-1.576697832206264e-05, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001288']iou:0.5644340875491743
+------iou_avg: 0.7598519987754235
+Lossy conversion from float64 to uint8. Range [-1.537831121822819e-05, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000001192092896]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001288']iou:0.6999619964530023
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000001192092896]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001289']iou:0.797306046110132
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02353416383266449, 1.0324598550796509]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023526985198259354, 1.0323684215545654]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001299']iou:0.8959981677354877
+Lossy conversion from float64 to uint8. Range [-0.02367168292403221, 1.032118797302246]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.020199833437800407, 1.0289878845214844]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02016136422753334, 1.028975248336792]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001299']iou:0.8287819828506491
+Lossy conversion from float64 to uint8. Range [-0.02013217844069004, 1.0289759635925293]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0007957490161061287, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0007859545876272023, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001299']iou:0.8782576920266023
+Lossy conversion from float64 to uint8. Range [-0.0007846083608455956, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.7080056722959908
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00041796197183430195, 1.007675051689148]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0004219014663249254, 1.0076727867126465]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.8200463275745584
+Lossy conversion from float64 to uint8. Range [-0.0001798560842871666, 1.0073378086090088]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.7099250635928226
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00024857354583218694, 0.9998867511749268]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00017803660011850297, 0.9998520612716675]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.6067213842058563
+------iou_avg: 0.6945004332845102
+Lossy conversion from float64 to uint8. Range [-0.00015501180314458907, 0.9998555183410645]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0012887415941804647, 0.9998509883880615]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0010867740493267775, 0.9998388886451721]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.625729658392975
+Lossy conversion from float64 to uint8. Range [-0.0009892989182844758, 0.9998310804367065]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.7029755579171094
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0014567375183105]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0014593601226807]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.7964911112590718
+Lossy conversion from float64 to uint8. Range [0.0, 1.0014643669128418]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.7758561447715039
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004693594761192799, 1.0049526691436768]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004667564295232296, 1.005017638206482]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.8035129645118891
+Lossy conversion from float64 to uint8. Range [-0.004653954412788153, 1.005055546760559]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006019272841513157, 1.0114225149154663]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006031890865415335, 1.0114738941192627]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001311']iou:0.856084201482118
+Lossy conversion from float64 to uint8. Range [-0.006157161667943001, 1.011555552482605]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.029530242085456848, 1.032384991645813]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.029614165425300598, 1.0324519872665405]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001321']iou:0.9830488810185326
+Lossy conversion from float64 to uint8. Range [-0.029661890119314194, 1.0324398279190063]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001377']iou:0.480554361839278
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.000734378001652658, 1.0002537965774536]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0007349459920078516, 1.0002539157867432]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001408']iou:0.9332919556359123
+------iou_avg: 0.695754483682839
+Lossy conversion from float64 to uint8. Range [-0.0007362712640315294, 1.0002491474151611]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012399209663271904, 1.0053731203079224]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012335305102169514, 1.0053565502166748]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001408']iou:0.8136385675694396
+Lossy conversion from float64 to uint8. Range [-0.01225338689982891, 1.0053396224975586]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001408']iou:0.8900003003814845
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.020841121673584]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0208344459533691]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001408']iou:0.8955608698901427
+Lossy conversion from float64 to uint8. Range [0.0, 1.0208053588867188]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0008968583424575627, 1.014100193977356]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00088805629638955, 1.0140900611877441]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001408']iou:0.8793741721479436
+Lossy conversion from float64 to uint8. Range [-0.0008800335926935077, 1.0140856504440308]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001408']iou:0.5739647195998044
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.015360687859356403, 1.0082106590270996]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.017349129542708397, 1.0080875158309937]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001423']iou:0.823269095128666
+Lossy conversion from float64 to uint8. Range [-0.01738741248846054, 1.0080276727676392]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.010858580470085144, 1.009483814239502]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.010884519666433334, 1.00953209400177]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.9820935465175741
+Lossy conversion from float64 to uint8. Range [-0.010890165343880653, 1.0095902681350708]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003519950434565544, 1.0150948762893677]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003510698676109314, 1.0150983333587646]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.9561012246899956
+Lossy conversion from float64 to uint8. Range [-0.00348515622317791, 1.0151060819625854]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013185561634600163, 1.0101661682128906]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01318699587136507, 1.010205864906311]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.9221855223714889
+------iou_avg: 0.7736188018296539
+Lossy conversion from float64 to uint8. Range [-0.013190933503210545, 1.010252833366394]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013120239600539207, 1.0247243642807007]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013053890317678452, 1.0247286558151245]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.9747809263684989
+Lossy conversion from float64 to uint8. Range [-0.012918290682137012, 1.0247303247451782]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.9147417596677914
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0005146265029907]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.000516653060913]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.9237254166720542
+Lossy conversion from float64 to uint8. Range [0.0, 1.0005263090133667]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0011942618293687701, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0011906990548595786, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001430']iou:0.7333320100831663
+Lossy conversion from float64 to uint8. Range [-0.0010011637350544333, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009171362034976482, 1.0084657669067383]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009201555512845516, 1.0085084438323975]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001457']iou:0.9483820949116579
+Lossy conversion from float64 to uint8. Range [-0.009221854619681835, 1.0085351467132568]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0024125576019287]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0024003982543945]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001457']iou:0.7087881684189345
+Lossy conversion from float64 to uint8. Range [0.0, 1.0023865699768066]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012316158972680569, 1.017343282699585]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.012316625565290451, 1.017336368560791]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001458']iou:0.9819331600264035
+Lossy conversion from float64 to uint8. Range [-0.012192132882773876, 1.0168650150299072]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02095160447061062, 1.0243861675262451]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.020957643166184425, 1.024398922920227]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001526']iou:0.9152673328525807
+Lossy conversion from float64 to uint8. Range [-0.02092953398823738, 1.0243803262710571]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03040989488363266, 1.0082719326019287]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.029954642057418823, 1.0076673030853271]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001526']iou:0.9583461922483435
+------iou_avg: 0.8059297061249431
+Lossy conversion from float64 to uint8. Range [-0.03013032302260399, 1.0076007843017578]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.023542117327451706, 1.0673441886901855]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02329881116747856, 1.067458152770996]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001526']iou:0.9409028816756652
+Lossy conversion from float64 to uint8. Range [-0.02414713427424431, 1.0675036907196045]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01373258139938116, 1.0228906869888306]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013728217221796513, 1.0227444171905518]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001526']iou:0.8891252690379328
+Lossy conversion from float64 to uint8. Range [-0.013353881426155567, 1.0227843523025513]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0024641714990139008, 1.0083497762680054]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.002507107565179467, 1.0083723068237305]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001526']iou:0.9025406438588579
+Lossy conversion from float64 to uint8. Range [-0.002640837337821722, 1.0084068775177002]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0018415723461657763, 1.0012770891189575]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00146475771907717, 1.000542402267456]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001568']iou:0.9578461011921738
+Lossy conversion from float64 to uint8. Range [-0.0014710566028952599, 1.000553846359253]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01172800175845623, 1.0202608108520508]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011717342771589756, 1.020268440246582]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001585']iou:0.9437230755179395
+Lossy conversion from float64 to uint8. Range [-0.009650726802647114, 1.0203272104263306]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0009590970585122705, 1.004531741142273]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0009673032909631729, 1.004535436630249]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001585']iou:0.7213439174615881
+Lossy conversion from float64 to uint8. Range [-0.0009700243244878948, 1.0045260190963745]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001585']iou:0.8131830985915492
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02940884232521057, 1.0382890701293945]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.029735779389739037, 1.0383471250534058]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001586']iou:0.7720115408550039
+Lossy conversion from float64 to uint8. Range [-0.029752779752016068, 1.0383639335632324]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004983923863619566, 1.0085833072662354]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004981376230716705, 1.0085759162902832]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001586']iou:0.856378047649949
+------iou_avg: 0.779705457584066
+Lossy conversion from float64 to uint8. Range [-0.004980893339961767, 1.0085750818252563]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001587']iou:0.5453914451803222
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-8.642062311992049e-05, 0.9999995827674866]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00012481940211728215, 0.9999997019767761]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.8506342895010887
+Lossy conversion from float64 to uint8. Range [-0.00013814738485962152, 0.9999997615814209]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.7405598291848255
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.7967522262964903
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.7702876608629826
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.000954508781433]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0009689331054688]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.7978164010757436
+Lossy conversion from float64 to uint8. Range [0.0, 1.0010018348693848]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0002622604370117]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0002644062042236]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.798535829931015
+Lossy conversion from float64 to uint8. Range [0.0, 1.0002660751342773]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001594']iou:0.7938447533349673
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.8474897468533447
+------iou_avg: 0.694131218222078
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00010975459008477628, 1.0017895698547363]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00011058652307838202, 1.0018311738967896]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.9022044552591176
+Lossy conversion from float64 to uint8. Range [-0.00011063733836635947, 1.0018367767333984]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00623667798936367, 1.013127088546753]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0062372758984565735, 1.0131263732910156]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.775849266753295
+Lossy conversion from float64 to uint8. Range [-0.006354535464197397, 1.0130788087844849]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.007597093004733324, 1.0020097494125366]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.007587425410747528, 1.0020105838775635]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.7852524787897373
+Lossy conversion from float64 to uint8. Range [-0.007618810050189495, 1.0020527839660645]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0068615674972534]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0074797868728638]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.8578034022148647
+Lossy conversion from float64 to uint8. Range [0.0, 1.007789134979248]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.5164186613518064
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0002094507217407]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.000208854675293]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001630']iou:0.2981686124231352
+Lossy conversion from float64 to uint8. Range [0.0, 1.0002058744430542]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.007793771103024483, 1.006652593612671]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.00790705718100071, 1.0066219568252563]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001677']iou:0.9664188301018731
+Lossy conversion from float64 to uint8. Range [-0.007877741940319538, 1.0066163539886475]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.000008225440979]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.000009298324585]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001677']iou:0.9346901791315257
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000094175338745]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003429003292694688, 1.0482807159423828]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0033967786002904177, 1.0482468605041504]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001678']iou:0.9163016980275863
+------iou_avg: 0.6953107584052942
+Lossy conversion from float64 to uint8. Range [-0.0033844788558781147, 1.0482170581817627]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-5.05708740092814e-05, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-5.0877308240160346e-05, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001678']iou:0.9542724967750544
+Lossy conversion from float64 to uint8. Range [-5.456598591990769e-05, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009799272753298283, 1.0382945537567139]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.009866111911833286, 1.0388845205307007]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001678']iou:0.9520957447938238
+Lossy conversion from float64 to uint8. Range [-0.00987401232123375, 1.0389633178710938]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001678']iou:0.7776677782409337
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001678']iou:0.7829423563268509
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001678']iou:0.8216077558565016
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0028247833251953]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0028316974639893]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001717']iou:0.9567115974030254
+Lossy conversion from float64 to uint8. Range [0.0, 1.0074632167816162]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0029212976805865765, 1.0101561546325684]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0029243805911391973, 1.0099883079528809]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001717']iou:0.9034655030670967
+Lossy conversion from float64 to uint8. Range [-0.0027929183561354876, 1.0099639892578125]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006719912402331829, 1.046949028968811]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006520609837025404, 1.0470190048217773]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001717']iou:0.9308881817674315
+Lossy conversion from float64 to uint8. Range [-0.006519121117889881, 1.047062635421753]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001717']iou:0.7259236358015149
+------iou_avg: 0.7805575050032234
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.8742223424398161
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.8054147401258983
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.817493556701031
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.7268235409226554
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.6121997937232946
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.6123196209347405
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.6481218993621545
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.66381431169109
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.696156394963552
+------iou_avg: 0.6456566200864232
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.5628602305475504
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.7016760992599043
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.6134506599622879
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.661761350673055
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.6941781297762957
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.5770798369695517
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.5712043938799529
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.711995419410249
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.6382575757575758
+------iou_avg: 0.5732463696236423
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001733']iou:0.5413327226929242
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.04260218143463135, 1.0475362539291382]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.04253559559583664, 1.047550916671753]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001761']iou:0.9620904771741375
+Lossy conversion from float64 to uint8. Range [-0.041956827044487, 1.0475929975509644]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.025350769981741905, 1.0471832752227783]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02559303678572178, 1.047285556793213]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001763']iou:0.9586084356066491
+Lossy conversion from float64 to uint8. Range [-0.025739427655935287, 1.0473498106002808]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.038372885435819626, 1.0359275341033936]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03837288171052933, 1.0359166860580444]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001763']iou:0.962408036078728
+Lossy conversion from float64 to uint8. Range [-0.03837498277425766, 1.0360033512115479]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.020688777789473534, 1.046557068824768]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.020875731483101845, 1.046520709991455]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001763']iou:0.7453055964653903
+Lossy conversion from float64 to uint8. Range [-0.02095082961022854, 1.0464283227920532]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001763']iou:0.939524899019857
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013387789018452168, 1.0067615509033203]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013390003703534603, 1.00655198097229]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001774']iou:0.9463230078032632
+Lossy conversion from float64 to uint8. Range [-0.013392159715294838, 1.0056263208389282]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001884']iou:0.9062994897061412
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001884']iou:0.8800711111111111
+------iou_avg: 0.7841963775658203
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004021987318992615, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0029512655455619097, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001884']iou:0.9137083155492048
+Lossy conversion from float64 to uint8. Range [-0.0028998185880482197, 1.0]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.014626706019043922, 1.0216500759124756]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.014683876186609268, 1.0216971635818481]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001884']iou:0.784101599247413
+Lossy conversion from float64 to uint8. Range [-0.014714563265442848, 1.0217384099960327]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001955']iou:0.6888830958174024
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_001955']iou:0.760001597061407
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002046']iou:0.8625931011020255
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01577651873230934, 1.0454952716827393]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01582370698451996, 1.0455845594406128]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002046']iou:0.9361547879881428
+Lossy conversion from float64 to uint8. Range [-0.015903087332844734, 1.0456688404083252]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.020455708727240562, 1.0262588262557983]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.020492229610681534, 1.0261268615722656]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002094']iou:0.8737245497719471
+Lossy conversion from float64 to uint8. Range [-0.0204927995800972, 1.026048183441162]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002119']iou:0.912995167378038
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02197999507188797, 1.0259289741516113]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02200518175959587, 1.0261471271514893]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002119']iou:0.8945163277880468
+------iou_avg: 0.7626678541703626
+Lossy conversion from float64 to uint8. Range [-0.022015955299139023, 1.0261213779449463]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0021274988539516926, 1.0047187805175781]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0018078174907714128, 1.004389762878418]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002119']iou:0.7435727658797205
+Lossy conversion from float64 to uint8. Range [-0.001835336908698082, 1.004473328590393]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003255958901718259, 1.0156002044677734]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003273999784141779, 1.015627145767212]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002119']iou:0.8832566371681416
+Lossy conversion from float64 to uint8. Range [-0.0032795837614685297, 1.0156476497650146]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002119']iou:0.8380584192439863
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0018665790557861]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.001535415649414]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002119']iou:0.90118769883351
+Lossy conversion from float64 to uint8. Range [0.0, 1.0014638900756836]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000001192092896]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000001192092896]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002132']iou:0.959901079221899
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000001192092896]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.030382301658391953, 1.0423935651779175]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.030252700671553612, 1.0424902439117432]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002260']iou:0.9504071770979727
+Lossy conversion from float64 to uint8. Range [-0.03022773377597332, 1.0425266027450562]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0015387447783723474, 1.0038789510726929]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0015476146945729852, 1.0038871765136719]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002266']iou:0.8703792034342952
+Lossy conversion from float64 to uint8. Range [-0.001732871402055025, 1.003943681716919]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03960186988115311, 1.0353649854660034]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03963100165128708, 1.035462498664856]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002266']iou:0.946939075475858
+Lossy conversion from float64 to uint8. Range [-0.03965098783373833, 1.0355136394500732]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006756393238902092, 1.0159738063812256]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.006805195473134518, 1.0160548686981201]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002268']iou:0.9504872456291201
+------iou_avg: 0.8044189301984502
+Lossy conversion from float64 to uint8. Range [-0.006800075061619282, 1.0160577297210693]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002268']iou:0.8633214788471513
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013180606067180634, 1.0432313680648804]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013104801066219807, 1.0432324409484863]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002268']iou:0.9501466532416933
+Lossy conversion from float64 to uint8. Range [-0.013049322180449963, 1.043226718902588]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0097543001174927]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0097730159759521]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002284']iou:0.9512781807248137
+Lossy conversion from float64 to uint8. Range [0.0, 1.0097956657409668]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002284']iou:0.9327540612013601
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002284']iou:0.4128865829975943
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002284']iou:0.7809064142223547
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002284']iou:0.8302208182353124
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004944928456097841, 1.0102086067199707]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004946304950863123, 1.01020348072052]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002284']iou:0.862013912646824
+Lossy conversion from float64 to uint8. Range [-0.00494085717946291, 1.0102092027664185]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.011169034987688065, 1.0156556367874146]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.010992726311087608, 1.0156244039535522]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002376']iou:0.8416215632758168
+------iou_avg: 0.742514966539292
+Lossy conversion from float64 to uint8. Range [-0.010839756578207016, 1.0156216621398926]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.002595277735963464, 1.002003788948059]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0025965548120439053, 1.0020065307617188]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002378']iou:0.8284893205832894
+Lossy conversion from float64 to uint8. Range [-0.002597856568172574, 1.002009391784668]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002378']iou:0.45452978191535215
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002378']iou:0.7318538750426766
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002378']iou:0.8472119802597992
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002378']iou:0.32623113645829993
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.003924606833606958, 1.000704288482666]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0037747914902865887, 1.000144600868225]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002378']iou:0.6251886634244508
+Lossy conversion from float64 to uint8. Range [-0.0037240004166960716, 1.0000330209732056]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002387']iou:0.8915512594107259
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002387']iou:0.8610953039048316
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002387']iou:0.7899541284403669
+------iou_avg: 0.6356105449439793
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002387']iou:0.8313532921484766
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013813886791467667, 1.020266056060791]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013819007202982903, 1.0203027725219727]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002400']iou:0.9751852553255179
+Lossy conversion from float64 to uint8. Range [-0.013869257643818855, 1.0204226970672607]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002412']iou:0.870175752426099
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000027418136597]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0000035762786865]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002412']iou:0.8495759717314487
+Lossy conversion from float64 to uint8. Range [0.0, 1.000003695487976]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.016805477440357208, 1.0067793130874634]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.016771450638771057, 1.0067394971847534]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002426']iou:0.9102754412007257
+Lossy conversion from float64 to uint8. Range [-0.016751503571867943, 1.006723165512085]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002426']iou:0.9128784271038847
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002427']iou:0.6368636863686369
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.044294834136963]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0.0, 1.0442949533462524]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002427']iou:0.9521547044470003
+Lossy conversion from float64 to uint8. Range [0.0, 1.044298529624939]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002427']iou:0.6403787653530341
+------iou_avg: 0.7578841296104823
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.017326530069112778, 1.0068402290344238]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.01732950285077095, 1.0068535804748535]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002445']iou:0.9794072810893213
+Lossy conversion from float64 to uint8. Range [-0.017336223274469376, 1.0068624019622803]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.025077667087316513, 1.0320357084274292]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02500656433403492, 1.0320591926574707]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002470']iou:0.9186538182346109
+Lossy conversion from float64 to uint8. Range [-0.025020698085427284, 1.0323314666748047]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0012456860858947039, 1.0725197792053223]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0012441064463928342, 1.0725393295288086]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002539']iou:0.9579371165644172
+Lossy conversion from float64 to uint8. Range [-0.0012439221609383821, 1.0725493431091309]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.0075186616741120815, 1.0115300416946411]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.004257659427821636, 1.0117385387420654]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002539']iou:0.8878736039832548
+Lossy conversion from float64 to uint8. Range [-0.0018645958043634892, 1.0119720697402954]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02085699886083603, 1.0187071561813354]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.02083965390920639, 1.0186904668807983]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002565']iou:0.8612116133484498
+Lossy conversion from float64 to uint8. Range [-0.021528048440814018, 1.02001953125]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002565']iou:0.8472936774522726
+Lossy conversion from float64 to uint8. Range [0, 1]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013657724484801292, 1.0262445211410522]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.013627402484416962, 1.0262682437896729]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002597']iou:0.8699286302497942
+Lossy conversion from float64 to uint8. Range [-0.013582250103354454, 1.0263011455535889]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.025081627070903778, 1.0200923681259155]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.025105973705649376, 1.020097255706787]. Convert image to uint8 prior to saving to suppress this warning.
+images:['2007_002597']iou:0.8889017689472098
+Lossy conversion from float64 to uint8. Range [-0.02514761872589588, 1.0199530124664307]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03671671822667122, 1.0256028175354004]. Convert image to uint8 prior to saving to suppress this warning.
+Lossy conversion from float64 to uint8. Range [-0.03670267388224602, 1.0256191492080688]. Convert image to uint8 prior to saving to suppress this warning.

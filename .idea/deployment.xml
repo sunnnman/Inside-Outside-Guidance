@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="3090" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="3090">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zhupengqi/Inside-Outside-Guidance-master" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="3090 (project level)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zhupengqi/Inside-Outside-Guidance-master" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="十卡">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="十卡 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/zhupengqi/Inside-Outside-Guidance-master" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="十卡(2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

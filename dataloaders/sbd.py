@@ -43,7 +43,8 @@ class SBDSegmentation(data.Dataset):
         self.retname = retname
 
         # Where to find things according to the author's structure
-        self.dataset_dir = os.path.join(self.root, 'benchmark_RELEASE', 'dataset')
+        # self.dataset_dir = os.path.join(self.root, 'benchmark_RELEASE', 'dataset')
+        self.dataset_dir = self.root
         _mask_dir = os.path.join(self.dataset_dir, 'inst')
         _image_dir = os.path.join(self.dataset_dir, 'img')
 

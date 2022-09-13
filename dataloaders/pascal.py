@@ -64,9 +64,9 @@ class VOCSegmentation(data.Dataset):
         if download:
             self._download()
 
-        if not self._check_integrity():
-            raise RuntimeError('Dataset not found or corrupted.' +
-                               ' You can use download=True to download it')
+        # if not self._check_integrity():
+        #     raise RuntimeError('Dataset not found or corrupted.' +
+        #                        ' You can use download=True to download it')
 
         # train/val/test splits are pre-cut
         _splits_dir = os.path.join(_voc_root, 'ImageSets', 'Segmentation')
@@ -104,7 +104,7 @@ class VOCSegmentation(data.Dataset):
         num_images = 0
         for ii in range(len(self.im_ids)):
             flag = False
-            for jj in range(len(self.obj_dict[self.im_ids[ii]])):
+            for jj in range(len(self.obj_dict[self.im_ids[ii]])):  # 确实是把一张图片里的每个object单独拿出来的
                 if self.obj_dict[self.im_ids[ii]][jj] != -1:
                     self.obj_list.append([ii, jj])
                     flag = True

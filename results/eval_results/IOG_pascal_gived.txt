@@ -1,0 +1,2 @@
+0.4
+Result for IOG_pascal_gived                                                                : 92.0775

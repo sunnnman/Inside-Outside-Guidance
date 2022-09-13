@@ -59,7 +59,7 @@ class SegmentationNetwork(nn.Module):
         low_level_feat_4, low_level_feat_3,low_level_feat_2,low_level_feat_1 = self.backbone(input)
         low_level_feat_4 = self.psp4(low_level_feat_4)   
         res_out = [low_level_feat_4, low_level_feat_3,low_level_feat_2,low_level_feat_1]   
-        coarse_fms, coarse_outs = self.Coarse_net(res_out)
+        coarse_fms, coarse_outs = self.Coarse_net(res_out)  #fms是每一层的特征，coarse是每一层的预测
         fine_out = self.Fine_net(coarse_fms)
         coarse_outs[0] = self.upsample(coarse_outs[0])
         coarse_outs[1] = self.upsample(coarse_outs[1])
@@ -98,6 +98,7 @@ def Network(nInputChannels=5,num_classes=1,backbone='resnet101',output_stride=16
     if pretrained:       
         load_pth_name= Path.models_dir()
         pretrain_dict = torch.load( load_pth_name,map_location=lambda storage, loc: storage)
+        # pretrain_dict = torch.load( load_pth_name,map_location='cuda:4')
         conv1_weight_new=np.zeros( (64,5,7,7) )
         conv1_weight_new[:,:3,:,:]=pretrain_dict['conv1.weight'].cpu().data
         pretrain_dict['conv1.weight']=torch.from_numpy(conv1_weight_new  )

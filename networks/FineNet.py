@@ -71,6 +71,7 @@ class FineNet(nn.Module):
         fine_fms = []
         for i in range(4):
             fine_fms.append(self.cascade[i](x[i]))
-        out = torch.cat(fine_fms, dim=1) 
+        out = torch.cat(fine_fms, dim=1)
+        #在FineNet的最后预测之前加入DB模块
         out = self.final_predict(out)
         return out

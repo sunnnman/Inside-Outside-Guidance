@@ -1,0 +1,9 @@
+模型开始训练前需要注意的几点：
+    transforms:是IOG还是Grid要和训练代码对应
+    VOCSegmentation/GrabCutDataset:数据加载的类要和数据对应
+    resume_epoch：开始的epoch  关系到是否会加载预训练的模型
+    snapshot：记录模型的轮次
+    imsave：最后image保存的格式，多类和单类的区别
+    void_piexls:grabcut数据的该部分为None
+
+

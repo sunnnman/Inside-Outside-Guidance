@@ -2,11 +2,12 @@ import os
 import torch, cv2
 import random
 import numpy as np
-
+from imageio import imsave
 
 def tens2image(im):
     if im.size()[0] == 1:
-        tmp = np.squeeze(im.numpy(), axis=0)
+        # tensor.detach().numpy()
+        tmp = np.squeeze(im.detach().numpy(), axis=0)
     else:
         tmp = im.numpy()
     if tmp.ndim == 2:
@@ -15,11 +16,11 @@ def tens2image(im):
         return tmp.transpose((1, 2, 0))
 
 
-def crop2fullmask(crop_mask, bbox, im=None, im_size=None, zero_pad=False, relax=0, mask_relax=True,
+def crop2fullmask(crop_mask, bbox, im=None,result_pre = None, im_size=None, zero_pad=False, relax=0, mask_relax=True,
                   interpolation=cv2.INTER_CUBIC, scikit=False):
-    if scikit:
-        from skimage.transform import resize as sk_resize
-    assert(not(im is None and im_size is None)), 'You have to provide an image or the image size  True'  
+    # if scikit:
+    #     from skimage.transform import resize as sk_resize
+    assert(not(im is None and im_size is None)), 'You have to provide an image or the image size  True'
     if im is None:
         im_si = im_size
     else:
@@ -50,7 +51,8 @@ def crop2fullmask(crop_mask, bbox, im=None, im_size=None, zero_pad=False, relax=
     inds = tuple(map(sum, zip(bbox_valid, offsets + offsets)))
 
     if scikit:
-        crop_mask = sk_resize(crop_mask, (bbox[3] - bbox[1] + 1, bbox[2] - bbox[0] + 1), order=0, mode='constant').astype(crop_mask.dtype)
+        # crop_mask = sk_resize(crop_mask, (bbox[3] - bbox[1] + 1, bbox[2] - bbox[0] + 1), order=0, mode='constant').astype(crop_mask.dtype)
+        pass
     else:
         crop_mask = cv2.resize(crop_mask, (bbox[2] - bbox[0] + 1, bbox[3] - bbox[1] + 1), interpolation=interpolation)
     result_ = np.zeros(im_si)
@@ -64,8 +66,48 @@ def crop2fullmask(crop_mask, bbox, im=None, im_size=None, zero_pad=False, relax=
     else:
         result = result_
 
+    if result_pre is not None:
+        result = result + result_pre
+        result = np.where(result > 1, 1, result)
+
     return result
 
+def crop2fullmask_(crop_mask, bbox, im=None, result_pre = None, im_size=None, zero_pad=False, relax=0, mask_relax=True,
+                  interpolation=cv2.INTER_CUBIC, scikit=False):
+    #(pred, bbox, gt, zero_pad=True, relax=0,mask_relax=False)
+    if scikit:
+        # from skimage.transform import resize as sk_resize
+        pass
+    assert(not(im is None and im_size is None)), 'You have to provide an image or the image size  True'
+    if im is None:
+        im_si = im_size
+    else:
+        im_si = im.shape
+    # Borers of image
+    bounds = (0, 0, im_si[1] - 1, im_si[0] - 1)
+    bbox = (max(bbox[0], bounds[0]),
+                  max(bbox[1], bounds[1]),
+                  min(bbox[2], bounds[2]),
+                  min(bbox[3], bounds[3]))
+
+    crop_mask = cv2.resize(crop_mask, (bbox[2] - bbox[0] + 1, bbox[3] - bbox[1] + 1), interpolation=interpolation)
+
+
+    # if result_pre is None:
+    #     result_ = np.zeros(im_si)
+    # else:
+    #     result_ = result_pre
+    result_ = np.zeros(im_si)
+
+    result_[bbox[1]:bbox[3] + 1, bbox[0]:bbox[2] + 1] = crop_mask
+
+    if result_pre is not None:
+        result = result_ + result_pre
+        result = np.where(result > 1, 1, result)
+    else:
+        result = result_
+
+    return result
 
 def overlay_mask(im, ma, colors=None, alpha=0.5):
     assert np.max(im) <= 1.0
@@ -280,6 +322,7 @@ def crop_from_mask(img, mask, relax=0, zero_pad=False):
     assert(mask.shape[:2] == img.shape[:2])
     bbox = get_bbox(mask, pad=relax, zero_pad=zero_pad)
 
+
     if bbox is None:
         return None
 
@@ -287,6 +330,37 @@ def crop_from_mask(img, mask, relax=0, zero_pad=False):
 
     return crop
 
+
+def crop_from_mask_(img, mask,bbox_, relax=0, zero_pad=False):
+    if mask.shape[:2] != img.shape[:2]:
+        mask = cv2.resize(mask, dsize=tuple(reversed(img.shape[:2])), interpolation=cv2.INTER_NEAREST)
+
+    assert(mask.shape[:2] == img.shape[:2])
+    # bbox = get_bbox(mask, pad=relax, zero_pad=zero_pad)
+    if zero_pad:
+        x_min_bound = -np.inf
+        y_min_bound = -np.inf
+        x_max_bound = np.inf
+        y_max_bound = np.inf
+    else:
+        x_min_bound = 0
+        y_min_bound = 0
+        x_max_bound = mask.shape[1] - 1
+        y_max_bound = mask.shape[0] - 1
+
+    x_min = max(bbox_[0] - relax, x_min_bound)
+    y_min = max(bbox_[1] - relax, y_min_bound)
+    x_max = min(bbox_[0]+bbox_[2] + relax, x_max_bound)
+    y_max = min(bbox_[1]+bbox_[3] + relax, y_max_bound)
+
+    bbox = x_min, y_min, x_max, y_max
+
+    if bbox is None:
+        return None
+
+    crop = crop_from_bbox(img, bbox, zero_pad)
+
+    return crop
 
 def make_gaussian(size, sigma=10, center=None, d_type=np.float64):
     """ Make a square gaussian kernel.
@@ -307,7 +381,221 @@ def make_gaussian(size, sigma=10, center=None, d_type=np.float64):
 
     return np.exp(-4 * np.log(2) * ((x - x0) ** 2 + (y - y0) ** 2) / sigma ** 2).astype(d_type)
 
-    
+def grids(mask, dev =1, img = 1 ,screen = 0.1, pad_pixel=10,meta=None):
+
+    # 过滤出符合要求的grids
+    def find_point(id_x, id_y, ids):
+        sel_id = ids[0][random.randint(0, len(ids[0]) - 1)]
+        return [id_x[sel_id], id_y[sel_id]]
+
+    inds_y, inds_x = np.where(mask > 0.5)
+    targer = np.where(mask > 0.5, 1, 0)
+    guide = np.zeros_like(targer)
+    [h,w]=mask.shape
+
+
+    left = find_point(inds_x, inds_y, np.where(inds_x <= np.min(inds_x)))
+    right = find_point(inds_x, inds_y, np.where(inds_x >= np.max(inds_x)))
+    top = find_point(inds_x, inds_y, np.where(inds_y <= np.min(inds_y)))
+    bottom = find_point(inds_x, inds_y, np.where(inds_y >= np.max(inds_y)))
+
+    x_min=left[0]
+    x_max=right[0]
+    y_min=top[1]
+    y_max=bottom[1]
+
+    left_top = [max(x_min - pad_pixel, 0), max(y_min - pad_pixel, 0)]
+    left_bottom = [max(x_min - pad_pixel, 0), min(y_max + pad_pixel, h)]
+    right_top = [min(x_max + pad_pixel, w), max(y_min - pad_pixel, 0)]
+    righr_bottom = [min(x_max + pad_pixel, w), min(y_max + pad_pixel, h)]
+    a = [left_top,left_bottom,right_top,righr_bottom]
+
+    # patch_size = int(min(h, w) / dev)
+    patch_size = int(min(x_max - x_min, y_max - y_min) / dev)
+    # patch_size = patch_size/2
+    # if patch_size>60:
+    #     patch_size = 20
+    # elif h>30:
+    #     patch_size = 10
+    # print('patch_size:' + str(patch_size))
+    # screen_3 = [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.2, 0.1, 0.1, 0.1, 0.3, 0.05]
+    screen_3 = [0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.2, 0.2, 0.3, 0.1, 0.1, 0.1, 0.1, 0.1, 0.05]
+
+    # 存在一个patch_size过大的问题，patch_size最大只给他截到100吧
+
+    # if patch_size >= 70:
+    #     patch_size = 70
+    # elif patch_size >= 65:
+    #     patch_size = 65
+    # if patch_size >= 60:
+    #     patch_size = 60
+    # elif patch_size >= 55:
+    #     patch_size = 55
+    # if patch_size >= 50:
+    #     patch_size = 50
+    # elif patch_size >= 45:
+    #     patch_size = 45
+    # elif patch_size >= 40:
+    #     patch_size = 40
+    # elif patch_size >= 35:
+    #     patch_size = 35
+    # elif patch_size >= 30:
+    if patch_size >= 30:
+        patch_size = 30
+    # elif patch_size >= 25:
+    #     patch_size = 25
+    elif patch_size >= 20:
+        patch_size = 20
+    # elif patch_size >= 15:
+    #     patch_size = 15
+    elif patch_size >= 10:
+        patch_size = 10
+    else:
+        patch_size = 10
+
+    # patch_size = patch_size - 20
+    # if patch_size > 50:
+    #     patch_size = 50
+    # elif patch_size < 10:
+    #     patch_size = 10
+    # print( meta['image'] + '-' + meta['object'] + ' patch_size:' + str(patch_size))
+    # print( meta['image'] + ' patch_size:' + str(patch_size))
+    # patch_size = 30
+    # patch_size = int(patch_size / 2)
+    # screen_ = screen_1
+    screen_ = screen_3
+    np.random.seed(0)
+
+    # 直接用bbox做指导
+    # bbox_ = get_bbox(targer,pad=30)
+    # guide[bbox_[1]:bbox_[3],bbox_[0]:bbox_[2]] = 1
+
+    # guide_ = guide.astype(np.uint8)
+    # cv2.imwrite("/home/zhupengqi/Inside-Outside-Guidance-master/results/Grid_pascal_5010_guassian7_sample_grabcut_bbox/guide/"+meta['image']+'.png',guide_)
+
+    xmin = 0
+    ymin = 0
+    x_ = targer.shape[1] % patch_size
+    y_ = targer.shape[0] % patch_size
+    p = np.array([0, 1])
+    for i in range(int(targer.shape[0] / patch_size)):
+        for j in range(int(targer.shape[1] / patch_size)):
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, patch_size, patch_size  # 矩形裁剪区域 (ymin:ymin+h, xmin:xmin+w) 的位置参数
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                if prop == 1:
+                    keep = np.random.choice([0, 1], p=p.ravel())
+                    if keep:
+                        guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+                else:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+            xmin += patch_size
+
+        if x_ > 0:
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, x_, patch_size
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+        ymin += patch_size
+        xmin = 0
+
+    if y_ > 0:
+        i = int(mask.shape[0] / patch_size)
+        xmin = 0
+        ymin = i * patch_size
+        for j in range(int(targer.shape[1] / patch_size)):
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, patch_size, y_
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+            xmin += patch_size
+        if x_ > 0:
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, x_, y_
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+
+    return guide, np.array(a)
+
+def grids_(mask):
+    # 指导细化交互的grid_guide 根据初次反馈的pred作为mask，patch_size直接取到10，再次生成新一轮的grid_guide
+
+    targer = np.where(mask > 0.5, 1, 0)
+    guide = np.zeros_like(targer)
+
+    patch_size = 10
+    # screen_ = [0.1, 0.1, 0.1, 0.2, 0.1, 0.1, 0.1]
+    screen_ = [0.9, 0.9, 0.9, 0.8, 0.9, 0.9, 0.9]
+
+    xmin = 0
+    ymin = 0
+    x_ = targer.shape[1] % patch_size
+    y_ = targer.shape[0] % patch_size
+    p = np.array([0, 1])
+    for i in range(int(targer.shape[0] / patch_size)):
+        for j in range(int(targer.shape[1] / patch_size)):
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, patch_size, patch_size  # 矩形裁剪区域 (ymin:ymin+h, xmin:xmin+w) 的位置参数
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+            xmin += patch_size
+
+        if x_ > 0:
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, x_, patch_size
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+        ymin += patch_size
+        xmin = 0
+
+    if y_ > 0:
+        i = int(mask.shape[0] / patch_size)
+        xmin = 0
+        ymin = i * patch_size
+        for j in range(int(targer.shape[1] / patch_size)):
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, patch_size, y_
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+            xmin += patch_size
+        if x_ > 0:
+            screen = random.choice(screen_)
+            x, y, w, h = xmin, ymin, x_, y_
+            region = targer[y:y + h, x:x + w].copy()  # 切片获得裁剪后保留的图像区域
+            prop = region.sum() / (w * h)
+            if prop > screen:
+                keep = np.random.choice([0, 1], p=p.ravel())
+                if keep:
+                    guide[i * patch_size:i * patch_size + patch_size, j * patch_size:j * patch_size + patch_size] = 1
+    return guide*255
+
+
 def make_gt(img, labels, sigma=10, one_mask_per_point=False):
     """ Make the ground-truth for  landmark.
     img: the original color image
@@ -346,8 +634,72 @@ def make_gt(img, labels, sigma=10, one_mask_per_point=False):
     gt = np.zeros(shape=(h, w, 2))
     gt[:, :, 0]=gt_0
     gt[:, :, 1]=gt_1
+
     gt = gt.astype(dtype=img.dtype) #(0~1)
     return gt  
+
+def make_gt_grids(img, grids, bg_points, sigma=10, one_mask_per_point=False,meta=None,img_ = None,dev = None):
+    '''Make the ground-truth for screened grids.
+
+    Args:
+        img:
+        labels:
+        sigma:
+        one_mask_per_point:
+
+    Returns:
+
+    '''
+    h, w = img.shape[:2]
+    map_xor_new = np.zeros((h + 2, w + 2))
+    map_xor_new[1:(h + 1), 1:(w + 1)] = grids[:, :]
+    if grids.sum() == 0:
+        gt = make_gaussian((h, w), center=(h // 2, w // 2), sigma=sigma)
+        gt_0 = np.zeros(shape=(h, w), dtype=np.float64)
+        gt_0 = gt
+        gt_1 = np.zeros(shape=(h, w), dtype=np.float64)
+
+        gtout = np.zeros(shape=(h, w, 2))
+        gtout[:, :, 0] = gt_0
+        gtout[:, :, 1] = gt_1
+        gtout = gtout.astype(dtype=img.dtype)  # (0~1)
+        return gtout
+    else:
+        # gt_0 = np.zeros(shape=(h, w), dtype=np.float64)
+        gt_1 = np.zeros(shape=(h, w), dtype=np.float64)
+        # 以下两句屏蔽负指导
+        for ii in range(0, bg_points.shape[0]):
+            gt_1 = np.maximum(gt_1, make_gaussian((h, w), center=bg_points[ii, :], sigma=sigma))
+        # gt_0_temp = ndimage.distance_transform_edt(map_xor_new)
+        # gt_0 = gt_0_temp[1:(h + 1), 1:(w + 1)]
+        gt_0 = grids[:, :]
+        gt_0 = np.where(gt_0 == 1, 255, 0)
+        gt_0 = gt_0.astype(np.float32)
+        gt_0 = cv2.GaussianBlur(gt_0, (7, 7), 0)
+        # if dev > 3:
+        #     gt_0 = cv2.GaussianBlur(gt_0, (7, 7), 0)
+        # else:
+        #     gt_0 = cv2.GaussianBlur(gt_0, (3, 3), 0)
+        gt_0 = gt_0 / 255
+    gt = np.zeros(shape=(h, w, 2))
+    gt[:, :, 0] = gt_0
+    gt[:, :, 1] = gt_1
+    gt = gt.astype(dtype=img.dtype)  # (0~1)
+
+    # result = gt_0 * 200
+    # result_mask = np.zeros((img.shape[0], img.shape[1], 3))
+    # result_mask[:, :, 1] = result
+    # result_mask = result_mask.astype(np.uint8)
+    # img_ = img_.astype(np.uint8)
+    # result_final = cv2.addWeighted(img_, 1, result_mask, 0.9, 1)
+    # path = "/home/zhupengqi/Inside-Outside-Guidance-master/results/Grid_coco_5010_guassian7_sample_ctw1500/guide/"
+    # # # cv2.imwrite(path+meta['image']+'-'+meta['object']+'.png',result_final)
+    # # # cv2.imwrite(path+meta['image']+'.png',result_final)
+    # imsave(path+meta['image']+'-'+meta['object']+'.png',result_final)
+
+
+    return gt
+
 
 def cstm_normalize(im, max_value):
     """
